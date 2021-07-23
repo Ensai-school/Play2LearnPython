@@ -1,0 +1,504 @@
+# syntax
+# None : null
+# True / False : true / false
+# int/float : 3 / 3.14
+# dict: {hp: 13, sp: 5}
+# list: [LITE, RES_ACID, SUS_DEXT] => ['LITE', 'RES_ACID', 'SUS_DEXT']
+# tupple : !!python/tuple [3, 6]
+
+# type de la scene
+# valeurs possibles : grid | prompt
+scene_type : "prompt"
+
+display text: 
+  fr : !!str "MEURTRE À L'HOTEL\n
+  Notions abordées dans ce niveau :\n
+\n
+- Print\n
+ 
+Objets utilisables dans ce niveau :\n
+- les pièces : room\n
+Il est possible de print les rooms pour obtenir toutes les informations ou de faire room.variable pour obtenir la valeur d’une variable en particulier. Par exemple on peut obtenir le nom d’une pièce avec room.name.\n
+Variables disponibles pour les rooms:\n
+-id : l'identifiant de la pièce\n
+-name : nom de la pièce\n
+-info : des informations sur la pièce\n
+opening_hours : la période d'ouverture de la pièce\n
+\n
+- Les suspects : suspect\n
+De la meme manière que pour les pièces, il est possible de print chaque suspect pour obtenir ses informations.\n
+La liste des suspects se trouve dans le rapport de police : crime_report.suspect_list\n
+Variables disponibles pour les suspects :\n
+-name : Nom et prénom du suspect\n
+-age : L'âge du suspect\n
+-height  : la taille du suspect\n
+-alibi : L'alibi du suspect\n
+-alibi_range : La période couverte par l'alibi\n
+-alibi_room_id : L'id de la pièce où se trouvait le suspect\n
+-description : Une description du suspect\n
+\n
+-- Objectif du niveau  --\n
+ 
+Un meurtre a eu lieu à l’hôtel du bord de mer! \n
+
+En tant qu’enquêteur, vous devez fournir à la police le nom du coupable. Lorsque vous l’aurez trouvé, marquez son prénom et nom dans la barre de réponse.\n
+Petit conseil : il serait intéressant de commencer par lire le rapport de la police (l'objet crime_report).\n
+\n
+Bonne chance !
+"
+  en : !!str "MEURTRE À L'HOTEL"
+
+win conditions :
+  key : 'Damien Cébizar'
+
+game objects :
+  # ROOMS
+  # new game object
+  -
+    type : PromptRoom
+    common_dict :
+        id : "hotel"
+        name : "Hôtel du bord de mer"
+        info : "Un hôtel luxueux situé en bord de mer."
+        opening_hours : ['07:00','24:00']
+    custom_dict :
+  # new game object
+  -
+    type : PromptRoom
+    common_dict :
+        id : "hall"
+        name : "Hall de l'Hôtel"
+        info : "Un grand hall lumineux."
+        opening_hours : ['07:00','24:00']
+    custom_dict :
+  # new game object
+  -
+    type : PromptRoom
+    common_dict :
+        id : "restaurant1"
+        name : "Restaurant la Mouette"
+        info : "Un très joli restaurant avec vue sur la mer."
+        opening_hours : ['10:00','22:30']
+    custom_dict :
+  # new game object
+  -
+    type : PromptRoom
+    common_dict :
+        id : "restaurant2"
+        name : "Restaurant le Gourmet"
+        info : "Restaurant situé sur le toit de l'hôtel."
+        opening_hours : ['11:00','23:00']
+    custom_dict :
+  # new game object
+  -
+    type : PromptRoom
+    common_dict :
+        id : "swimming_pool1"
+        name : "Piscine de l'hôtel"
+        info : "Magnifique piscine située dans la cour de l'hôtel."
+        opening_hours : ['08:00','24:00']
+    custom_dict :
+
+  # new game object
+  -
+    type : PromptRoom
+    common_dict :
+        id : "movie_theater"
+        name : "Cinéma de l'hôtel"
+        info : "Grand cinéma de l'hôtel"
+        opening_hours : ['00:00','24:00']
+    custom_dict :
+
+  # new game object
+  -
+    type : PromptRoom
+    common_dict :
+        id : "hotel_rooms"
+        name : "Chambres de l'hôtel"
+        info : "Des chambres luxueuses"
+        opening_hours : ['00:00','24:00']
+    custom_dict :
+  # LISTE SUSPECTS
+
+  # new game object
+  -
+    type : PromptSuspect
+    common_dict :
+        id : "marc_gara"
+        name : "Marc Gara"
+        age : "33"
+        height : "1m87"
+        alibi : "Je me trouvais à la piscine de l'hôtel entre 22h30 et 23h50 avec ma femme Sophie Gara.Je n'ai rien vu et rien entendu."
+        alibi_range : ['22:30','23:50']
+        alibi_room_id : "swimming_pool1"
+        hair_color : 'Brun'
+        description : "Marc est un patissier qui a fait fortune en vendant des pains au chocolatine dans le sud de la France. Il profite de sa richesse nouvelle pour s'offrir des vacances avec sa femme."
+    custom_dict :
+
+  # new game object
+  -
+    type : PromptSuspect
+    common_dict :
+        id : "sophie_gara"
+        name : "Sophie Gara"
+        age : "30"
+        height : "1m71"
+        alibi : "Je me trouvais à la piscine de l'hôtel entre 22h30 et 23h50 avec mon mari Marc Gara."
+        alibi_range : ['23h00','24:00']
+        alibi_room_id : "restaurant2"
+        hair_color : 'Brun'
+        description : "Sophie Cébizar est à la tête d'un système de ponzi."
+    custom_dict :
+
+  # new game object
+  -
+    type : PromptSuspect
+    common_dict :
+        id : "gerard_getouvu"
+        name : "Gérard Gétouvu"
+        age : "56"
+        height : "1m68"
+        alibi : "Je suis passé dans le hall à 23h59 car je souhaitais aller faire une balade de nuit. À peine arrivé dans le hall, je remarque une personne assez grande, entre 1m80 et 1m90 je dirais, partir en courant dans un couloir sombre. Je n'ai pas eu le temps de voir son visage. Je suis alors tombé nez à nez face au corps de Mike Padechance."
+        alibi_range : ['23h59','24:00']
+        alibi_room_id : "hall"
+        hair_color : 'Blond'
+        description : "Gérard Gétouvu est un opticien originaire de Toulouse. Avec ses grandes lunettes rondes plus rien ne lui échappe."
+    custom_dict :
+
+  # new game object
+  -
+    type : PromptSuspect
+    common_dict :
+        id : "damien_cebizar"
+        name : "Damien Cébizar"
+        age : "45"
+        height : "1m86"
+        alibi : "Je mangeais au restaurant Le Gourmet sur le toit de l'hotel. J'ai pu admirer le ciel étoilé en dégustant une glace à la vanille."
+        alibi_range : ['23h00','24:00']
+        alibi_room_id : "restaurant2"
+        hair_color : 'Brun'
+        description : "Damien Cébizar est un jeune entrepeneur à succès."
+    custom_dict :
+
+  # new game object
+  -
+    type : PromptSuspect
+    common_dict :
+        id : "tony_stork"
+        name : "Tony Stork"
+        age : "47"
+        height : "1m83"
+        alibi : "Je regardais le dernier Marvol au cinéma de l'hôtel."
+        alibi_range : ['22h00','24:00']
+        alibi_room_id : "movie_theater"
+        hair_color : 'Brun'
+        description : "Tony Stork est un fan des films Marvol."
+    custom_dict :
+
+  # new game object
+  -
+    type : PromptSuspect
+    common_dict :
+        id : "alice_bini"
+        name : "Alice Bini"
+        age : "39"
+        height : "1m65"
+        alibi : "Je regardais le dernier Marvol au cinéma de l'hôtel."
+        alibi_range : ['22h00','24:00']
+        alibi_room_id : "movie_theater"
+        hair_color : 'Blonde'
+        description : "Alice Bini est l'héritière de la famille Bini."
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "luke_peralta"
+      name : "Luke Peralta"
+      age : 54
+      height : "1m75"
+      hair_color : "Noir"
+      alibi_room_id : "swimming_pool1"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "norm_scully"
+      name : "Norm Scully"
+      age : 58
+      height : "1m66"
+      hair_color : "Blond"
+      alibi_room_id : "movie_theater"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "gina_pritchett"
+      name : "Gina Pritchett"
+      age : 33
+      height : "1m65"
+      hair_color : "Brun"
+      alibi_room_id : "hotel"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "charles_pritchett"
+      name : "Charles Pritchett"
+      age : 58
+      height : "1m82"
+      hair_color : "Roux"
+      alibi_room_id : "movie_theater"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "rosa_scully"
+      name : "Rosa Scully"
+      age : 55
+      height : "1m83"
+      hair_color : "Roux"
+      alibi_room_id : "hall"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "lily_doaz"
+      name : "Lily Doaz"
+      age : 63
+      height : "1m64"
+      hair_color : "Roux"
+      alibi_room_id : "movie_theater"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "michael_scully"
+      name : "Michael Scully"
+      age : 37
+      height : "1m69"
+      hair_color : "Roux"
+      alibi_room_id : "hotel"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "jake_tucker"
+      name : "Jake Tucker"
+      age : 30
+      height : "1m86"
+      hair_color : "Roux"
+      alibi_room_id : "hall"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "gina_hitchcock"
+      name : "Gina Hitchcock"
+      age : 68
+      height : "1m77"
+      hair_color : "Noir"
+      alibi_room_id : "hall"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "raymond_santiago"
+      name : "Raymond Santiago"
+      age : 31
+      height : "1m83"
+      hair_color : "Roux"
+      alibi_room_id : "swimming_pool1"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "terry_peralta"
+      name : "Terry Peralta"
+      age : 35
+      height : "1m87"
+      hair_color : "Roux"
+      alibi_room_id : "movie_theater"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "rosa_linetti"
+      name : "Rosa Linetti"
+      age : 46
+      height : "1m61"
+      hair_color : "Blond"
+      alibi_room_id : "swimming_pool1"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "gina_boyle"
+      name : "Gina Boyle"
+      age : 42
+      height : "1m83"
+      hair_color : "Noir"
+      alibi_room_id : "hall"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "luke_peralta"
+      name : "Luke Peralta"
+      age : 20
+      height : "1m76"
+      hair_color : "Noir"
+      alibi_room_id : "hotel"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "michael_dunphy"
+      name : "Michael Dunphy"
+      age : 43
+      height : "1m72"
+      hair_color : "Brun"
+      alibi_room_id : "swimming_pool1"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "rosa_santiago"
+      name : "Rosa Santiago"
+      age : 26
+      height : "1m88"
+      hair_color : "Noir"
+      alibi_room_id : "hall"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "haley_doaz"
+      name : "Haley Doaz"
+      age : 58
+      height : "1m70"
+      hair_color : "Brun"
+      alibi_room_id : "movie_theater"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "haley_linetti"
+      name : "Haley Linetti"
+      age : 65
+      height : "1m74"
+      hair_color : "Roux"
+      alibi_room_id : "hotel"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "jay_dunphy"
+      name : "Jay Dunphy"
+      age : 21
+      height : "1m86"
+      hair_color : "Roux"
+      alibi_room_id : "hotel"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+  # new innocent PromptSuspect
+  -
+    type : PromptSuspect
+    common_dict :
+      id : "amy_linetti"
+      name : "Amy Linetti"
+      age : 27
+      height : "1m89"
+      hair_color : "Brun"
+      alibi_room_id : "movie_theater"
+      description : "TODO"
+      alibi : "TODO"
+    custom_dict :
+
+
+
+
+
+  # CRIME REPORT
+  -
+    type : PromptCrimeReport
+    common_dict :
+       id : 'crime_report'
+       date : '16/07/2021'
+       description : 'Dans la nuit, Mike Padechance a été retrouvé mort dans le hall de l’hôtel. Selon les experts, le meurtre a eu lieu à 23h56. Les policiers n’ont fermé aucune piste et ont placé tous les résidents de l’hôtel sur la liste des suspects. Un homme qui passait dans le hall à 23h59 a pu fournir un témoignage à la police. Cet homme s’appelle Gérard Gétouvu.'
+    custom_dict :

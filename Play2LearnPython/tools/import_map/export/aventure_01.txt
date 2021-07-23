@@ -1,0 +1,2338 @@
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [2,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [2,9]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [2,10]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [2,11]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [2,12]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [2,13]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [2,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [3,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [3,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,4]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,5]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,6]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,16]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,17]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,18]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [4,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [5,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [5,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [6,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [6,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [7,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [7,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [8,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [8,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [8,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [8,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [8,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [8,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [9,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [9,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [10,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [10,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [11,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [11,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [11,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [11,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [11,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [11,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [12,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [13,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [13,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [13,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [13,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [13,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [13,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [14,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [14,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [14,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [14,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [14,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [14,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [15,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [16,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [16,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [16,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [16,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [16,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [16,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [17,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [17,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [17,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [17,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [17,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [17,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [18,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [19,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [19,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [19,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [19,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [19,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [19,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [20,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [20,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [20,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [20,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [20,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [20,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [21,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [21,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [21,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [21,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [21,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [21,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [22,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [23,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [23,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [24,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [24,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [25,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [26,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [26,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [26,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [26,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [26,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [26,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [27,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [27,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [27,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [27,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [27,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [27,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [28,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [29,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [29,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [29,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [29,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [29,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [29,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [30,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [30,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [30,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [30,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [30,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [30,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [31,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [32,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [32,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [32,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [32,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [32,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [32,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [33,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [33,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [33,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [33,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [33,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [33,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [34,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [34,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [34,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [34,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [34,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [34,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [35,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [36,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [36,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [37,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [37,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [38,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [39,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [39,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [39,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [39,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [39,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [39,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [40,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [40,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [40,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [40,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [40,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [40,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [41,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [42,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [42,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [42,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [42,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [42,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [42,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [43,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [43,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [43,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [43,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [43,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [43,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [44,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [45,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [45,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [45,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [45,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [45,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [45,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [46,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [46,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [46,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [46,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [46,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [46,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [47,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [47,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [47,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [47,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [47,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [47,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,3]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,6]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,16]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,19]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [48,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [49,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [49,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [50,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [50,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,1]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,2]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,3]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,4]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,5]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,6]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,7]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,15]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,16]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,17]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,18]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,19]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,20]
+    custom_dict : 
+      game_object_character : '|'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [51,21]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [52,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [52,14]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [53,8]
+    custom_dict : 
+      game_object_character : '-'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [53,9]
+    custom_dict : 
+      game_object_character : 'A'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [53,10]
+    custom_dict : 
+      game_object_character : 'A'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [53,11]
+    custom_dict : 
+      game_object_character : 'A'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [53,12]
+    custom_dict : 
+      game_object_character : 'A'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [53,13]
+    custom_dict : 
+      game_object_character : 'A'
+  # new game object
+  -
+    type : GridObstacle
+    common_dict : 
+      position : !!python/tuple [53,14]
+    custom_dict : 
+      game_object_character : '-'

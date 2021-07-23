@@ -1,0 +1,24 @@
+scene_type : "prompt"
+
+display text:
+  fr : !!str "Vous êtes un controlleur aérien, et des passagers tentent d'envahir votre pays (probablement des coréens), patriote que vous êtes, vous vous souciez de l'état sanitaire de votre pays. Vous devez vous assurer qu'à bord du vol, aucune personne ne soit atteint du covid. Cela serait un jeu d'enfant si ces petits de conanrds de contaminés n'essayaient pas de vous le cacher ! mais chose positive, ils sont débiles, et un suel coup d'oeil suffit pour savoir si ils sont en règle ou non.objectif : laisser passer les voyageurs qui sont en règle et envoyer au cachot ceux qui ont trop fait la fête cette semaine et ont contracté le covid. Nous on est là pour la grosse moula, le but est d'intercepter jusqu'à atteindre 600€ de bénéfice positif, si jamais on laisse passer une personne avec le covid ou on intercepte une personne négative, on perd de l'argent. Bisous.\n\nfile_de_passager\n\nplayer"
+
+  en : !!str "You are an air traffic controller, and passengers are trying to invade your country (probably Koreans), patriot that you are, you care about the health of your country. You have to make sure that no one on board the flight is infected with covid. This would be a child's play if these little contaminated conanrds didn't try to hide it from you! but the good thing is that they are stupid, and a quick glance is enough to know if they are in order or not. objective: let the travelers who are in order pass and send to the dungeon those who partied too much this week and contracted the covid. Best Regards."
+
+win conditions :
+  key : "un pingouin sachant voler doit savoir voler sans le covid"
+
+game objects:
+
+  # new
+  -
+    type : FileDePassager
+    common_dict :
+      id : file_de_passager
+    custom_dict :
+  -
+    type : Moi
+    common_dict :
+      id : player
+    custom_dict :
+

@@ -1,0 +1,280 @@
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "luke_peralta"
+    name : "Luke Peralta"
+    age : 54
+    height : "1m75"
+    hair_color : "Noir"
+    alibi_room_id : "swimming_pool1"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "norm_scully"
+    name : "Norm Scully"
+    age : 58
+    height : "1m66"
+    hair_color : "Blond"
+    alibi_room_id : "movie_theater"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "gina_pritchett"
+    name : "Gina Pritchett"
+    age : 33
+    height : "1m65"
+    hair_color : "Brun"
+    alibi_room_id : "hotel"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "charles_pritchett"
+    name : "Charles Pritchett"
+    age : 58
+    height : "1m82"
+    hair_color : "Roux"
+    alibi_room_id : "movie_theater"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "rosa_scully"
+    name : "Rosa Scully"
+    age : 55
+    height : "1m83"
+    hair_color : "Roux"
+    alibi_room_id : "hall"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "lily_doaz"
+    name : "Lily Doaz"
+    age : 63
+    height : "1m64"
+    hair_color : "Roux"
+    alibi_room_id : "movie_theater"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "michael_scully"
+    name : "Michael Scully"
+    age : 37
+    height : "1m69"
+    hair_color : "Roux"
+    alibi_room_id : "hotel"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "jake_tucker"
+    name : "Jake Tucker"
+    age : 30
+    height : "1m86"
+    hair_color : "Roux"
+    alibi_room_id : "hall"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "gina_hitchcock"
+    name : "Gina Hitchcock"
+    age : 68
+    height : "1m77"
+    hair_color : "Noir"
+    alibi_room_id : "hall"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "raymond_santiago"
+    name : "Raymond Santiago"
+    age : 31
+    height : "1m83"
+    hair_color : "Roux"
+    alibi_room_id : "swimming_pool1"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "terry_peralta"
+    name : "Terry Peralta"
+    age : 35
+    height : "1m87"
+    hair_color : "Roux"
+    alibi_room_id : "movie_theater"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "rosa_linetti"
+    name : "Rosa Linetti"
+    age : 46
+    height : "1m61"
+    hair_color : "Blond"
+    alibi_room_id : "swimming_pool1"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "gina_boyle"
+    name : "Gina Boyle"
+    age : 42
+    height : "1m83"
+    hair_color : "Noir"
+    alibi_room_id : "hall"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "luke_peralta"
+    name : "Luke Peralta"
+    age : 20
+    height : "1m76"
+    hair_color : "Noir"
+    alibi_room_id : "hotel"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "michael_dunphy"
+    name : "Michael Dunphy"
+    age : 43
+    height : "1m72"
+    hair_color : "Brun"
+    alibi_room_id : "swimming_pool1"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "rosa_santiago"
+    name : "Rosa Santiago"
+    age : 26
+    height : "1m88"
+    hair_color : "Noir"
+    alibi_room_id : "hall"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "haley_doaz"
+    name : "Haley Doaz"
+    age : 58
+    height : "1m70"
+    hair_color : "Brun"
+    alibi_room_id : "movie_theater"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "haley_linetti"
+    name : "Haley Linetti"
+    age : 65
+    height : "1m74"
+    hair_color : "Roux"
+    alibi_room_id : "hotel"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "jay_dunphy"
+    name : "Jay Dunphy"
+    age : 21
+    height : "1m86"
+    hair_color : "Roux"
+    alibi_room_id : "hotel"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+
+# new innocent PromptSuspect
+-
+  type : PromptSuspect
+  common_dict :
+    id : "amy_linetti"
+    name : "Amy Linetti"
+    age : 27
+    height : "1m89"
+    hair_color : "Brun"
+    alibi_room_id : "movie_theater"
+    description : "TODO"
+    alibi : "TODO"
+  custom_dict :
+

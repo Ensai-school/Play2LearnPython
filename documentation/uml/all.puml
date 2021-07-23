@@ -1,0 +1,687 @@
+@startuml
+!theme blueprint
+skinparam package {
+    BorderColor #74b9ff
+    BorderThickness 3
+}
+
+skinparam Class{
+    BorderThickness 1.5
+    HeaderFontColor #ecf0f1
+}
+
+skinparam Note{
+    BackgroundColor #6c5ce7
+    BorderColor #bdc3c7
+    FontColor #ecf0f1
+}
+skinparam linetype polyline
+skinparam linetype ortho
+
+
+package "Lecture (text -> dict)" <<Rectangle>>{
+
+    abstract class Parser <<strategy>>{
+        - file_path : str
+        > getter / setter
+        load() : dict
+    }
+
+    class YamlParser <<concrete>>{
+        load()
+    }
+
+    class JsonParser <<concrete>>{
+        load()
+    }
+
+    package "PyYaml" <<Rectangle>>{
+    
+    }
+
+}
+
+
+
+package "dict -> scene (strategy pattern)" <<Rectangle>>{
+    
+    package "importation niveau (plusieurs scenes)" <<Rectangle>>{
+    
+    
+    class Import <<context>>{
+        __ attributes __
+        - level_folder : str
+        - scene_dict : dict = None
+        
+        .. Strategy Attributes ..
+        - scene_importer : SceneImporter = None
+        - file_parser : Parser = None
+        ' - Renderer : Render
+        
+        > changent dans une boucle
+        en fcn de la scene en train
+        d'etre importée
+        > getter / setter
+        ..
+        __ methods __
+
+        .. constructor ..
+
+        <<create>> __init__(level_folder : str)
+
+        .. main ..
+        import_level() : list[Scene]
+        .. choose strategy ..
+        choose_importer(scene_dict) : SceneImporter
+        ' choose_renderer(scene_dict) : Render
+        choose_parser(file_path) : Parser
+        .. intermediate ..
+        get_scene_dict(file_path) : dict
+        > utilise choose_parser
+        get_scene(scene_dict) : Scene
+        > utilise scene_importer et
+        dynamic_import (= import *)
+    }
+
+    }
+
+    package " importation scene unique" <<Rectangle>>{
+    
+
+    abstract class SceneImporter <<strategy>>{
+        
+        __ attributes __
+        
+        - scene_dict : dict
+        - scene_factory : SceneFactory = None
+        > getter / setter
+
+        __ methods __
+
+        - call_factory(dict) : Scene
+        > calls create_scene
+
+    }
+    class GridImporter <<concrete>>{
+        - factory = GridSceneFactory
+    }
+    class PromptImporter <<concrete>>{
+        - factory = PromptSceneFactory
+    }
+
+    }
+
+    note left of Import
+    importation d'un niveau complet
+
+    importation successive de toutes
+    les scènes d'un niveau
+
+    retourne toutes les importations ( list[Scene] )
+    end note
+
+
+
+}
+package "factory.create" <<Cloud>>{
+}
+
+
+
+
+
+package " " <<Rectangle>> #192a56{
+
+package "Object Creation (abstract factory)" <<Rectangle>>{
+ 
+    abstract class ObjectFactory <<interface>>{
+        
+        __ attributes __
+
+        {field} - prefix = none
+        {field} - package = none
+        {field} - type_location_dict = none
+        {field} + scene_dict : dict
+        {field} + object_importer : ImportObjectDefinition
+
+        __ methods __
+        
+        <<create>> __init__(scene_dict)
+        ..
+        {method} import_objects
+        {method} create_object(object_dict: dict, game_object_list: list)
+    }
+
+    ' class GridObjectFactory{
+    '     create_object()
+    ' }
+
+    ' class PromptObjectFactory{
+    '     create_object()
+    ' }
+
+        class ImportObjectDefinition{
+
+            __ Attributes __
+
+            + level_folder
+            > Store Singleton
+            + scene_dict
+
+            __ Methods __
+
+            <<create>> __init__(scene_dict)
+
+            {method} import_setup()
+            > imports setup.py
+            {method} import_default()
+            > imports predfined GO
+            {method} import_objects()
+            > calls the two above
+
+        }
+}
+package "objects definition" <<Rectangle>>{
+
+    class PromptObject{
+        
+        __ attributes __
+        
+        + id : str
+        > common_dict['id']
+
+        __ methods __
+
+        {method} [abstract] update
+        {method} [abstract] __str__
+
+    }
+
+    class GridObject{
+        {field} - position : (int,int)
+        > determined by 
+        common_dict['position']
+        
+        {field} - {class} render_character : str
+
+        {field} + {class}name
+
+        {field} - {class}is_editable = False
+
+        {method} position_getter()
+        {method} __str__
+        {method}  update()
+
+    }
+
+    abstract class GameObject{
+        __ attributes __
+
+        - {class}is_editable
+        + game_object_list
+        
+        .. common_dict ..
+
+        > utilisation à définir
+        dans les sous classes
+
+        .. custom_dict ..
+
+        > setattr( key, value )
+
+        __ methods __
+        
+        {method} notify()
+        
+        {method} [abstract] update()
+        > call après l'update de
+        la scene
+        {method} [abstract] __str__()
+    } 
+
+    note right of GameObject::update()
+    comportement
+    observer sans
+    en être un
+    end note
+
+
+}
+
+note right of GameObject
+Custom GameObj attributes
+with use of custom_dict
+end note
+
+package "Scene Definition" <<Rectangle>>{
+
+    abstract class Scene{
+        + objects : list[GamObject]
+        + display_text : str
+        + game_states : list[str]
+        + win_conditions : WinConditions
+
+        {method} __add__(GameObject)
+        {method} update()
+        {method} is_won()
+
+    }
+
+    class GridScene{
+        {field} + dimension : (int, int)
+        {method}  add_game_state(str)
+        {method} __add__(GridObject)
+        {method} __iter__
+        {method} __getitem__(key : int)
+        {method} __setitem__(key : int, item : GameObject)
+        {method} __delitem__(key : int)
+        {method} __next__
+        {method} __len__
+        {method} __str__
+        {method} update
+        {method} select(object_id)
+        {method} su_select(object_id)
+        {method} is_won
+        {method} [static] win_condition(dict, scene)
+    }
+
+    class PromptScene{
+        
+        __ attributes __
+        + win_conditions
+
+        .. constructor ..
+        <<create>> __init__(game_object_list : list, display_text : dict , win_conditions)
+
+        {method} update
+        {method} is_won(word)
+        {method} __str__
+        {method} __iter__
+        {method} __len__
+        {method} __add__(GameObject)
+
+    }
+
+
+    package "Win Condition" <<Rectangle>>{
+    
+        abstract class WinConditions{
+            {method} [abstract] __bool__
+        }
+
+        abstract class Condition{
+            + var_name : str
+            + comparator : str
+            + value
+            + object : GameObject
+
+            {method} __bool__
+
+        }
+
+        class GridWinConditions{
+            + list : list
+            + connector : {or, and}
+        }
+
+        class PromptWinConditions{
+            + key : str
+            + word : str
+
+            update(word)
+            > changes word
+            {method} __bool__
+            > key == word
+        }
+
+    }
+
+
+}
+
+
+package "Win Conditions"<<Rectangle>>{
+
+    abstract class WinConditionsImporter{
+
+        {method} [abstract] create(win_condition_dict : dict, game_object_list : list) : WinCOnditions
+    }
+
+    class GridWinConditionsImporter
+
+    class PromptWinConditionsImporter
+}
+
+
+
+package "Scene Creation" <<Rectangle>>{
+
+
+    abstract class SceneFactory <<interface>>{
+        .. no setter ..
+        - scene_dict : dict
+        > getter only
+        - game_object_factory : GameObjectFactory
+        > getter only
+        + game_object_list : list[GameObject]
+        
+        __ methods __
+        <<create>> __init__(scene_dict)
+        create_scene() : Scene
+        build_scene(object_list, scene_dict) : Scene
+        > calls WinConditionsImporter
+    }
+
+    class PromptSceneFactory{
+        - game_object_factory
+        build_scene()
+    }
+
+    class GridSceneFactory{
+        - game_object_factory
+        build_scene()
+    }
+
+
+
+}
+
+
+
+}
+
+
+package "Observer Pattern" <<Rectangle>>{
+
+    abstract class Observer{
+        update(subject)
+    }
+
+    abstract class Subject{
+        - observers
+        notify()
+    }
+
+
+
+}
+
+class Manager <<context : SceneInterface>>{
+    + level_folder_path : str
+    + scene_list : list[Scene]
+    + lang : str
+    + scene_interface : SceneInterface
+    + current_scene_number : int = 0
+
+    __ methods __
+    {method} get_lang()
+    {method} get_level()
+    {method} get_scenes()
+    {method} run()
+    {method} start_level_interface()
+}
+note right of Manager::start_level_interface()
+détecte le préfixe
+de la scène et Lance
+la bonne interface
+end note
+
+
+class Store <<singleton>>{
+    + level_folder_path : str
+    + lang : str
+}
+
+
+package prompt_toolkit <<Rectangle>>{
+
+}
+
+
+package "User Interface (Scene -> UI)" <<Rectangle>>{
+
+    class LanguageSelector <level>{
+        + current_language : str
+        {method} retrieve_level_langs
+        {method} menu 
+    }
+
+
+    package "Level Interface" <<Rectangle>>{
+    
+
+    abstract class SceneInterface<<strategy : manager | context : render >>{
+        __ attributes __
+        + scene : Scene
+        + initial_scene = deepcopy(scene)
+        
+        .. runtime modifiable ..
+        
+        + user_code
+
+        > permet afficher solution si désirée
+
+        .. render frame ..
+
+        + frames: list[str]
+        + current_frame : int
+        '> old : current_step
+        + frame_number : int
+        '> old : max_step
+
+        .. custom ..
+
+        + custom_keybinds : list[ prompt_toolkit.Keybind ]
+        + custom_completer
+        + custom_feedback_layout : prompt_toolkit.Container
+
+        .. runtime modifiable ui elem ..
+
+        + feedback : prompt_toolkit.TextArea
+        + instructions : prompt_toolkit.TextArea
+        + progress : prompt_toolkit.TextArea
+        + code_result : prompt_toolkit.TextArea
+        + key_bindings_instructions : prompt_toolkit.TextArea
+        
+        ..
+
+        __ methods __
+
+        run()
+        update()
+        {abstract} create_custom_area()
+    }
+
+
+    class PromptSceneInterface <<concrete>>{
+        create_custom_area()
+    }
+
+    class AnswerValidator{
+        + answer
+        validate(document)
+    }
+
+    class GridSceneInterface <<concrete>>{
+        create_custom_area()
+    }
+    }
+
+    package keybinds <<Rectangle>>{
+        class interface_keybindings{
+            create(interface) : prompt_toolkit.KeyBindings
+        }
+    }
+
+    package textfield <<Rectangle>>{
+        package lexer <<Rectangle>>{
+        
+        }
+        package auto_complete <<Rectangle>>{
+        
+        }
+    }
+
+    package "interface layout" <<Rectangle>>{
+        class interface_layout{
+            create(scene_interface, play_area) : prompt_toolkit.Layout
+        }
+    }
+
+
+    package handlers <<Rectangle>>{
+        package " exit\n run\n next\n previous\n solution\n reset" <<Rectangle>>{
+    }
+    }
+
+
+    class LevelSelector{
+        + levels_dict : dict
+        + current_level_scene : int = 0
+
+        {method} <<create>> __init__(levels_path)
+        {method} menu
+        {method} [static] get_level_list(levels_path)
+        {method} [static] get_folder_position_name(path : str, position : int)
+    }
+
+package "Interface qui dépend de la Scène" <<Rectangle>>{
+    abstract class Render <<strategy>>{
+
+    }
+
+    note right of Render
+    utilise le
+    préfixe du
+    nom de la classe
+    de la scene
+
+    Grid - Scene
+    end note
+
+    class GridRender<<concrete>>{
+        {method} SceneToText(GridScene)
+        {method} render_gamestates(GridScene)
+
+    }
+
+    class PromptRender<<concrete>>{
+
+    }
+}
+}
+
+
+
+package "user" <<Rectangle>>{
+
+}
+
+
+
+
+PromptSceneInterface --|> SceneInterface
+GridSceneInterface --|> SceneInterface
+
+
+GridRender --|> Render
+PromptRender --|> Render
+SceneInterface o.right. Render #ff6b6b : scene class prefix >
+'Import o--right--- Render #ff9ff3
+
+
+
+"user" .down.> Manager : main >
+Manager .right.> LevelSelector #fbc531 : get_path >
+Manager .left.> LanguageSelector #ff9ff3 : get_lang >
+Manager ...> Import
+
+
+
+keybinds -o SceneInterface #ff6b6b
+textfield -o SceneInterface #ff6b6b
+
+Manager ..> SceneInterface : calls >
+
+
+
+
+
+YamlParser -up-|> Parser #63cdda
+JsonParser -up-|> Parser #63cdda
+
+PromptImporter -left-|> SceneImporter #ff6b6b
+GridImporter -right-|> SceneImporter #ff6b6b
+
+Import o-- SceneImporter #ff9ff3 : strategy from dict >
+Import o----- Parser #ff9ff3
+
+' GridObjectFactory -right-|> ObjectFactory #fbc531
+' PromptObjectFactory -left-|> ObjectFactory #fbc531
+
+GridObject -right-|> GameObject #ff6b6b
+PromptObject -left-|> GameObject #ff6b6b
+
+' PromptObjectFactory .down..> PromptObject #55E6C1 : [creates] >
+' GridObjectFactory .down..> GridObject #55E6C1 : [creates] >
+
+"factory.create" -up- SceneImporter 
+
+GridScene -right-|> Scene #ff6b6b
+PromptScene -left-|> Scene #ff6b6b
+
+PromptSceneFactory -left-|> SceneFactory
+GridSceneFactory -right-|> SceneFactory
+
+GridSceneFactory .up.> GridScene #55E6C1 : [creates] >
+PromptSceneFactory .up.> PromptScene #55E6C1 : [creates] >
+
+' GridObjectFactory -up-o GridSceneFactory #ff9ff3
+' PromptObjectFactory -up-o PromptSceneFactory #ff9ff3
+"Scene Creation" ---up--o SceneImporter #ff9ff3
+
+Subject o-up---- Observer
+
+Scene -right-|> Observer #fbc531
+GameObject -right-|> Subject #fbc531
+
+
+SceneInterface o- Scene #ff6b6b
+Scene o------ GameObject 
+
+ObjectFactory .down.> GameObject
+
+SceneInterface o-left- handlers #ff6b6b
+
+
+
+ImportObjectDefinition ---o ObjectFactory
+SceneFactory .down.> ObjectFactory
+
+
+
+
+WinConditions - Condition
+GridWinConditions -|> WinConditions
+PromptWinConditions -|> WinConditions
+
+Scene o- WinConditions
+
+"PyYaml" -up- YamlParser : dependency <
+
+"User Interface (Scene -> UI)" -- prompt_toolkit : dependency <
+
+
+Store --up-- Manager : modifies <
+Store --down-- ImportObjectDefinition : reads <
+
+
+PromptWinConditionsImporter -|> WinConditionsImporter
+GridWinConditionsImporter -|> WinConditionsImporter
+
+
+SceneFactory --- WinConditionsImporter
+
+AnswerValidator - PromptSceneInterface
+
+@enduml

@@ -1,0 +1,43 @@
+# syntax
+# None : null
+# True / False : true / false
+# int/float : 3 / 3.14
+# dict: {hp: 13, sp: 5}
+# list: [LITE, RES_ACID, SUS_DEXT] => ['LITE', 'RES_ACID', 'SUS_DEXT']
+# tupple : !!python/tuple [3, 6]
+
+# type de la scene
+# valeurs possibles : grid | prompt
+scene_type : "prompt"
+
+# Grid dimensions
+dimension : !!python/tuple [60,30]
+
+display text: 
+  fr : !!str "En arrivant devant la porte, vous apercevez un petit livre posé par terre.\n
+
+Une voix résonne alors à nouveau dans le temple :\n
+“Pour ouvrir la porte, il faudra calculer la somme de tous les chiffres présents dans ce livre !”
+Vous pouvez observer la liste des nombres dans le livre avec :\n
+old_book.numbers\n
+\n
+Bonne chance!\n
+\n
+Lorsque vous aurez trouvé le bon résultat, écrivez le dans la barre en bas et relancez le code.
+"
+
+  en : !!str "TODO"
+
+# C1 et C2 et ( C3 ou C4 ou [C6 et C7] )
+win conditions :
+  key : '35977228772131'
+
+game objects :
+
+  # new game object
+  -
+    type : OldBook
+    common_dict :
+      id : old_book
+      numbers : [1123,3453634,32432534543,21345645632,123435346563,2343453564578,768645674534,32453564563545,234345645634,2342345]
+    custom_dict : 
